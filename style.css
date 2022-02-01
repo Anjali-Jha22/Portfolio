@@ -8,6 +8,18 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 10px 19px 100px black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(87, 87, 255);
+  border-radius: 10px;
+}
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
@@ -75,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 15px;
   background: #040b14;
   overflow-y: auto;
+  overflow: hidden;
 }
 
 #header .profile img {
@@ -232,6 +245,26 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+}
+.container-links{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+.item-anj{
+  display: flex;
+}
+@media (max-width: 1024px) {
+  .container-links {
+    justify-content: center;
+  }
+  a.new{
+    padding: 5px;
+    margin: 5px;
+    
+  } 
+  
 }
 
 #hero h1 {
@@ -673,7 +706,7 @@ section {
   
 }
 .new{
-  padding: 70px;
+  padding: 50px;
   
 } 
 
